@@ -1,0 +1,84 @@
+.navbar {
+    background-color: #5667cb;
+}
+
+h3 {
+    color: #273656;
+}
+
+.h3-p {
+    font-size: 0.5em;
+    opacity: 0.7;
+}
+
+.fa-solid {
+    color: #8a9def;
+    font-size: 1.6em;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+}
+
+.btn {
+    font-size: 0.9em;
+    justify-content: center;
+    width: 47%;
+    color: #fff;
+    background-color: #5667cb;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #5667cb;
+    opacity: 0.8;
+}
+
+.or {
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.signUp {
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+#alert {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .fa-solid {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 0.5em;
+    }
+
+    .container {
+        overflow-y: scroll;
+        min-height: 100vh;
+    }
+
+    .or {
+        text-align: center;
+        font-size: 0.6em;
+    }
+
+    .signUp {
+        text-align: center;
+        font-size: 0.77em;
+    }
+}
