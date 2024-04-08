@@ -63,7 +63,7 @@ app.post("/login", async (req, res) => {
     return res.status(200).json({ success: true, msg: " logged", user });
   }
 
-  return res.status(401).json({ success: false, msg: "OPS" });
+  return res.status(401).json({ success: false, msg: "Email ou senha incorretos!" });
 });
 
 app.get("/users", (req, res) => {

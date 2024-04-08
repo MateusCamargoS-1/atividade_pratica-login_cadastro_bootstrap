@@ -15,11 +15,10 @@ formLogin.addEventListener('submit', (e) => {
     .then(function (res) {
         appendAlert(res.data.msg, 'success')
         sessionStorage.setItem('logged', email)
-        window.location.href = './index.html'
+        window.location.href = '../index.html'
     })
     .catch(function (err) {
-        console.log(err)
-        // appendAlert(err.response.data.msg, 'danger')
+        appendAlert(err.response.data.msg, 'danger')
     })
 
 })
@@ -38,7 +37,7 @@ const appendAlert = (message, type) => {
 const checkUserLogged = () => {
     const user = sessionStorage.getItem('logged');
     if(user) {
-        window.location.href = './index.html'
+        window.location.href = '../index.html'
     }
 }
 

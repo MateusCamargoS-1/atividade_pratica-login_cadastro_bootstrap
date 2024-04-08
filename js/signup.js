@@ -25,7 +25,7 @@ formCadastro.addEventListener('submit', (e) => {
     })
     .then(function (res) {
         appendAlert(res.data.msg, 'success')
-        window.location.href = './login.html';
+        window.location.href = '../login.html';
         
     })
     .catch(function (err) {
